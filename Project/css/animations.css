@@ -11,7 +11,7 @@
 
 .menu li {
     color: #000;
-    background-color: rbga(255, 255, 255,1 ); 
+    background-color: rbga(255, 255, 255, 1 ); 
     display: inline-block;
     margin: 0% auto;
     position: relative;
@@ -27,8 +27,8 @@
 }
 
 .menu li:hover {
-color: #foo;
-background color: rgba(100,45,0,.3);
+color: #f00;
+background color: rgba(100,65,0,.3);
 }
 
 .photo {
@@ -36,7 +36,7 @@ background color: rgba(100,45,0,.3);
     line-height: 0;
     margin-bottom: 2em;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 1px;
     border: 1px solid #021a40;
     background-color: #ff0;
