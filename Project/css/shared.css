@@ -126,7 +126,7 @@ nav {
 
   .menu-container {
       max-height: 340px;
-      margin: 0px auto;
+      margin: 0% auto;
       content: " ";
       width: 100%;
       position: fixed;
@@ -134,7 +134,7 @@ nav {
   }
 
   #home {
-      background: url(C:\Users\brian\Documents\GitHub\HTML-and-CSS-projects\web page\images\thumb_folder\thumb_home.png) no-repeat 50% 50%;
+      background: url("image_folder\thumb_home.png") no-repeat 50% 50%;
       background-attachment: fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -146,7 +146,7 @@ nav {
       padding-top: 350px;
       padding-bottom: 500px;
       color: #fff;  
-  }
+  } 
 
   .head-main {
       text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
@@ -159,7 +159,7 @@ nav {
       font-family: impact, sans-serif;
       line-height: 2;
       font-weight: 900;
-      border: 5px double #fff;
+      border: 5px double #000;
       padding:10px;
   } 
 
@@ -185,7 +185,8 @@ nav {
       border-radius: 8px;
       margin: 0px auto;
       background-color: rgba(100,65,0.3);
-      box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);  
+      box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+        
   }
 
   #contact {
@@ -252,10 +253,10 @@ nav {
     color: #8d8e8f;
     padding: 2% 1% 2% 7%;
     width: 80%;
-    border-top: 1px solid #090bod;
+    border-top: 1px solid #090b0d;
     border-right: 2px solid #424549;
     border-bottom: 2px solid #424549;
-    border-left: 1px solid #090bod;
+    border-left: 1px solid #090b0d;
     margin: 10px 1em;
     border-radius: 7px;
     background: #13161b;
@@ -310,7 +311,7 @@ nav {
 
 .submit input[type="submit"]:hover {
     color: #000;
-    background-color: #0d8e8f;
+    background-color: #8d8e8f;
     box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
 } 
 
