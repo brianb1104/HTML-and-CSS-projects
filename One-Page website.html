@@ -4,6 +4,7 @@
 		<title>camp crystal lake</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="My_One_Page_Css1.css">
+		<script src="JS/one_page_website.js"defer></script>
 	</head>
 		<body>
 			<div class="logo">
@@ -28,7 +29,7 @@
 			<img class="banner-image"src="my_web_page_img/thumb_1.jpg">
 		
 		</div>
-			<! --HOME -->
+			
 			<div id="home">
 				<div>
 					<div>
@@ -36,7 +37,7 @@
 					</div>
 				</div>
 			</div>
-		<! --END HOME -->
+		
 		
 		<!-- GALLERY -->
 			<section>
@@ -45,89 +46,74 @@
 					<h1>Gallery</h1>
 					<div>
 					
-						<!-- PHOTO CONTAINER1 -->
-						<div> 
-							<div>
-								<img src="C:\Users\brian\Documents\GitHub\HTML-and-CSS-projects\my_web_page_img\thumb_9.png" alt="if there is an issue with display,use google chrome">
-								<div>
-									<p>Click reservation to receive information about booking.</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO CONTAINER1 -->
-						<!-- PHOTO CONTAINER2 -->
-						<div>
-							<div>
-								<img src="my_web_page_img\thumb_2.png" alt="if there is ever an issue with displaying">
-									<div>
-									<p>Click reservation to receive information about booking.</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO CONTAINER2 -->
-					<!-- PHOTO3  -->
-						<div>
-							<div>
-								<img src="my_web_page_img\thumb_3.png" alt="if there is ever an issue with displaying">
-								<div>
-									<p>Click reservation to receive information about booking.</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO CONTAINER3 -->
-						<!-- PHOTO CONTAINER4 -->
-						<div>
-							<div>
-								<img src="my_web_page_img\thumb_4.png" alt="if there is ever an issue with displaying">
-								<div>
-									<p>Click reservation to receive information about booking.</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO CONTAINER4 -->
-						<!-- PHOTO CONTAINER5 -->
-						<div>
-							<div>
-								<img src="my_web_page_img\thumb_5.png" alt="if there is ever an issue with displaying">
-									<p>Click reservation to receive information about booking.</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO CONTAINER5 -->
-						<!-- PHOTO CONTAINER6 -->
-						<div>
-							<div>
-								<img src="my_web_page_img\thumb_6.png" alt="if there is ever an issue with displaying">
-								<div>
-									<p>Click reservation to receive information about booking</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO CONTAINER6 -->
-						<!-- PHOTO CONTAINER7 -->
-						<div>
-							<div>
-								<img src="my_web_page_img\thumb_7.png" alt="if there is ever an issue with displaying">
-									<div>
-									<p>Click reservation to receive information about booking.</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO CONTAINER7 -->
-						
-						<!-- PHOTO CONTAINER8 -->
-						<div>
-							<div>
-								<img src="my_web_page_img\thumb_8.png" alt="if there is ever an issue with displaying">
-									<div>
-									<p>Click reservation to receive information about booking.</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO CONTAINER8 -->
-						
-			</section>
-			<!-- END GALLERY -->
+						<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="my_web_page_img/thumb_2.png" style="width: 100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="my_web_page_img/thumb_3.png" style="width: 100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="my_web_page_img/thumb_4.png" style="width: 100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="my_web_page_img/thumb_6.png" style="width: 100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="my_web_page_img/thumb_2.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="my_web_page_img/thumb_3.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="my_web_page_img/thumb_4.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="my_web_page_img/thumb_6.png" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="my_web_page_img/thumb_2.png" style="width: 100%" onclick="currentSlide(1)" alt="Nature">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="my_web_page_img/thumb_3.png" style="width: 100%" onclick="currentSlide(2)" alt="Snow">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="my_web_page_img/thumb_4.png" style="width: 100%" onclick="currentSlide(3)" alt="Mountains">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="my_web_page_img/thumb_6.png"  style="width: 100%"onclick="currentSlide(4)" alt="Lights">
+	  </div>
+	</div>
+  </div>
 			<section>
 				<h1>Video</h1>
 				<div id ="video">
