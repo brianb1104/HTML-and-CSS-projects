@@ -11,7 +11,7 @@ function closeModal() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Next/previous controlss
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
