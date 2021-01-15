@@ -9,7 +9,7 @@
 		<body>
 			<div class="logo">
 							<a href="#home">Camp Crystal Lake</a>
-					</div>
+			</div>
 
 			<!-- NAV -->
 		<div>
@@ -20,20 +20,18 @@
 					<a href="#video"><li>VIDEO</li></a>
 					<a href="#contact"><li>RESERVATION</li></a>
 				</ul>
-		
 			</div>
 		</div>
 		<!--END NAV-->
 		
 		<div class="banner">
-			<img class="banner-image"src="my_web_page_img/thumb_1.jpg">
-		
+			<img class="banner-image"src="my_web_page_img/thumb_banner.jpg">		
 		</div>
 			
 			<div id="home">
 				<div>
 					<div>
-						<span>Welcome to Camp Crystal Lake</span>
+						<h3>Welcome to Camp Crystal Lake</h3>
 					</div>
 				</div>
 			</div>
@@ -121,29 +119,38 @@
 			</section>
 			<!-- RSVP -->
 			<section>
-				<div id="contact">
-					<div>
-						<h1>Reservations</h1>
-						<div>
-							<h2><span>Come have the fright of your life</span>
-							<br>Reserve your cabin today!
-							</h2>
-							<p style="text-align:center">
-								Please provide us with your basic contact information.
-							</p>
-							<div class= "row">
-								<form action="" method="post">
-									<input class="rsvp" type="text" value="First Name">
-									<input class="rsvp" type="text" value="Last Name">
-									<input class="rsvp" type="text" value="Email Address">
-									<input class="rsvp" type="text" value="Phone Number">
-									<div class="form-spacer">
-										<label class="terms">Terms and Conditions</label>
-									</div>
+				<div class="container1">
+					<div id="contact">
+					<div style="text-align:center">
+					  <h1>Reservation</h1>
+					  <p>Leave information receive newsletter or for booking info:</p>
+					</div>
+					<div class="row2">
+					  <div class="column2">
+						<img src="my_web_page_img/thumb_10.png" style="width:100%">
+					  </div>
+					  <div class="column2">
+						<form action="/action_page.php">
+						  <label for="fname">First Name</label>
+						  <input type="text" id="fname" name="firstname" placeholder="Your first  name..">
+						  <label for="lname">Last Name</label>
+						  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+						  <label for="country">Country</label>
+						  <select id="country" name="country">
+							<option value="australia">Australia</option>
+							<option value="canada">Canada</option>
+							<option value="usa">USA</option>
+						  </select>
+						  <label for="subject">Subject</label>
+						  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+						  <input type="submit" value="Submit">
+						</form>
+					  </div>
+					</div>
+					</div>
+				  </div>
+				
 							
-										<input type="submit" value="Sumbit">
-									</div>
-								</form>
 							</div>
 							</div>
 						</div>
